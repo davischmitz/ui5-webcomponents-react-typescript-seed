@@ -15,6 +15,8 @@
       "@ui5/webcomponents-fiori": "1.0.0-rc.8",
       "@ui5/webcomponents-icons": "1.0.0-rc.8",
       "@ui5/webcomponents-react": "0.10.2",
+      "@ui5/webcomponents-react-base": "0.10.1",
+      "@ui5/webcomponents-theme-base": "1.0.0-rc.8",
       "axios": "0.19.2",
       "i18next": "19.6.3",
       "i18next-browser-languagedetector": "5.0.0",
@@ -36,16 +38,8 @@
       "eject": "react-scripts eject"
     },
     "browserslist": {
-      "production": [
-        ">0.2%",
-        "not dead",
-        "not op_mini all"
-      ],
-      "development": [
-        "last 1 chrome version",
-        "last 1 firefox version",
-        "last 1 safari version"
-      ]
+      "production": [">0.2%", "not dead", "not op_mini all"],
+      "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
     },
     "husky": {
       "hooks": {
@@ -53,10 +47,7 @@
       }
     },
     "lint-staged": {
-      "*.{js,jsx,ts,tsx,json,css,scss,md}": [
-        "prettier --write",
-        "git add"
-      ]
+      "*.{js,jsx,ts,tsx,json,css,scss,md}": ["prettier --write", "git add"]
     },
     "devDependencies": {
       "@types/enzyme": "3.10.5",

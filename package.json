@@ -1,15 +1,22 @@
 {
   "name": "cra-template-ui5-webcomponents-react-typescript-seed",
-  "version": "0.1.0",
-  "main": "template.json",
+  "version": "1.0.0",
   "keywords": [
-    "react", 
+    "react",
     "create-react-app",
     "cra-template",
     "template",
     "ui5-webcomponents-react"
   ],
-  "files": ["template", "template.json"],
+  "publishConfig": {
+    "tag": "latest",
+    "access": "public"
+  },
+  "main": "template.json",
+  "files": [
+    "template",
+    "template.json"
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "5.11.2",
     "@testing-library/react": "10.4.7",
@@ -25,6 +32,8 @@
     "@ui5/webcomponents-fiori": "1.0.0-rc.8",
     "@ui5/webcomponents-icons": "1.0.0-rc.8",
     "@ui5/webcomponents-react": "0.10.2",
+    "@ui5/webcomponents-react-base": "0.10.1",
+    "@ui5/webcomponents-theme-base": "1.0.0-rc.8",
     "axios": "0.19.2",
     "i18next": "19.6.3",
     "i18next-browser-languagedetector": "5.0.0",
@@ -42,9 +51,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest --config=./jest.config.js",
+    "test": "jest --silent --config=./jest.config.js",
     "eject": "react-scripts eject",
-    "publish:copy": "cp -a ./public/. template/public && cp -a ./src/. template/src && cp -a ./test/. template/test && cp .eslintrc.json .prettierrc jest.config.js tsconfig.json template/"
+    "delete-from-template": "rm -rf template/* && rm template/.prettierrc && rm template/.eslintrc.json",
+    "copy-to-template": "cp -a ./public/. template/public && cp -a ./src/. template/src && cp -a ./test/. template/test && cp .gitignore template/gitignore && cp .eslintrc.json .prettierrc jest.config.js tsconfig.json template/"
   },
   "browserslist": {
     "production": [

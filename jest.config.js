@@ -3,8 +3,9 @@ module.exports = {
   setupFilesAfterEnv: [
     '<rootDir>/node_modules/document-register-element/build/document-register-element.node.js',
     '<rootDir>/test/UI5WebComponentsSetup.js',
-    '<rootDir>/test/jestSetup.ts',
+    '<rootDir>/test/jest.setup.ts',
   ],
+  snapshotSerializers: ['enzyme-to-json/serializer'],
   testEnvironment: 'jsdom-sixteen',
   modulePathIgnorePatterns: ['mocks'],
   moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
@@ -19,17 +20,10 @@ module.exports = {
     '^.+\\.(bmp|gif|jpg|jpeg|png|psd|svg|webp)$':
       '<rootDir>/test/__mocks__/mediaFileTransformer.js',
   },
-  globals: {
-    'ts-jest': {
-      diagnostics: {
-        ignoreCodes: [2307],
-      },
-    },
-  },
   testResultsProcessor: 'jest-sonar-reporter',
   collectCoverage: true,
   coverageDirectory: 'target/coverage/jest',
-  coverageReporters: ['json', 'lcov', 'text', 'clover'],
+  coverageReporters: ['json', 'lcov', 'text', 'cobertura', 'clover'],
   reporters: [
     'default',
     [

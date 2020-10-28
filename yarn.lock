@@ -1865,7 +1865,7 @@
   dependencies:
     "@ui5/webcomponents-base" "0.22.0"
 
-"@ui5/webcomponents-react-base@^0.10.1":
+"@ui5/webcomponents-react-base@0.10.1", "@ui5/webcomponents-react-base@^0.10.1":
   version "0.10.1"
   resolved "https://registry.yarnpkg.com/@ui5/webcomponents-react-base/-/webcomponents-react-base-0.10.1.tgz#7ab9b993b25b95a61f6ca59185dc4d87859b6e1e"
   integrity sha512-XfgIPEDv5nhdhe63TSdAmZkGqIQyMavn3XjUukjQCCW2m01CRGRAWxEVvrANWkzzzeNAk2RQkGy7YHf4eyghvQ==
