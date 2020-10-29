@@ -1,12 +1,13 @@
 {
   "name": "cra-template-ui5-webcomponents-react-typescript-seed",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "keywords": [
     "react",
     "create-react-app",
     "cra-template",
     "template",
-    "ui5-webcomponents-react"
+    "ui5-webcomponents-react",
+    "typescript"
   ],
   "publishConfig": {
     "tag": "latest",
