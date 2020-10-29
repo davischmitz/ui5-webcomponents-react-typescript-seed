@@ -1,4 +1,4 @@
-### <img src="https://simpleicons.org/icons/react.svg" width="20" alt="React Icon"> <img src="https://simpleicons.org/icons/typescript.svg" width="20" alt="Typescript Icon"> UI5 Web Components React Typescript Seed
+# <img src="https://simpleicons.org/icons/react.svg" width="20" alt="React Icon"> <img src="https://simpleicons.org/icons/typescript.svg" width="20" alt="Typescript Icon"> UI5 Web Components React Typescript Seed
 
 Includes the following dependencies configured:
 
@@ -13,7 +13,7 @@ Includes the following dependencies configured:
 - Jest
 - Enzyme for snapshot testing
 
-#### How to Use
+### How to Use
 
 To create an app using this template, just open a terminal and run:
 
@@ -23,7 +23,7 @@ or
 
 - `npx create-react-app PROJECT_NAME --template ui5-webcomponents-react-typescript-seed`
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
