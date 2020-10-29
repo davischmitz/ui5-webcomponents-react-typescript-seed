@@ -1,6 +1,6 @@
 {
   "name": "cra-template-ui5-webcomponents-react-typescript-seed",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "keywords": [
     "react",
     "create-react-app",
@@ -11,6 +11,11 @@
   "publishConfig": {
     "tag": "latest",
     "access": "public"
+  },
+  "description": "Create React App Template with UI5 Web Components and Typescript",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davischmitz/ui5-webcomponents-react-typescript-seed"
   },
   "main": "template.json",
   "files": [
