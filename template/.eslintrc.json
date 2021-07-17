@@ -6,10 +6,6 @@
   },
   "extends": [
     "airbnb",
-    "prettier",
-    "prettier/react",
-    "prettier/@typescript-eslint",
-    "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
     "eslint:recommended"
@@ -32,6 +28,8 @@
     "react/jsx-one-expression-per-line": ["off"],
     "react/prop-types": ["off"],
     "import/prefer-default-export": ["off"],
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
     "curly": ["error", "all"],
     "import/extensions": ["off", "always"],
     "prettier/prettier": [
